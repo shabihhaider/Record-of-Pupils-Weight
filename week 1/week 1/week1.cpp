@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-const int MAX_Students = 30;
+const int MAX_Students = 30; //You can input the size of the array (How many records of Pupils do you want to store)
 
 class StudentWeightRecord
 {
@@ -148,7 +148,7 @@ public:
             {
                 cout << "Status: " << " Fall\n" << endl;
             }
-            else if (weightsDiff[i] == 2.5)
+            else if (weightsDiff[i] == 0)
             {
                 cout << "Status: " << " No Change\n" << endl;
             }
