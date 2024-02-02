@@ -90,7 +90,7 @@ public:
 
         while (uniqueName(name) == true) //Name must be unique
         {
-            cout << "This name is already exist! Please Enter a UNIQUE Name.\n" << endl;
+            cout << "This name already exists! Please Enter a UNIQUE Name.\n" << endl;
             name = getName();
         }
 
@@ -140,11 +140,11 @@ public:
             cout << "Last day term weight: " << weightsLastDay[i] << endl;
             cout << "Difference in weight: " << weightsDiff[i] << endl;
 
-            if (weightsLastDay[i] > 2.5)
+            if (weightsDiff[i] > 2.5)
             {
                 cout << "Status: " << " Rise\n" << endl;
             }
-            else if (weightsLastDay[i] < 2.5)
+            else if (weightsDiff[i] < 2.5)
             {
                 cout << "Status: " << " Fall\n" << endl;
             }
